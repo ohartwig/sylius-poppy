@@ -30,6 +30,7 @@ use Koh\SyliusPoppy\Controller\DiscoveryController;
 use Koh\SyliusPoppy\Controller\EndpointController;
 use Koh\SyliusPoppy\Controller\ShopPages;
 use Koh\SyliusPoppy\DependencyInjection\ServiceFactory;
+use Koh\SyliusPoppy\Doctrine\PoppySchemaFilter;
 use Koh\SyliusPoppy\Http\CacheDocumentCache;
 use Koh\SyliusPoppy\Http\HttpClientFactory;
 use Koh\SyliusPoppy\Http\PsrBridge;
@@ -65,6 +66,12 @@ return static function (ContainerConfigurator $container): void {
     $services->set(DbalFeedbackSink::class)
         ->args([service('doctrine.dbal.default_connection'), param('koh_poppy.table_prefix')]);
     $services->alias(FeedbackSink::class, DbalFeedbackSink::class);
+
+    // The tables have no entity mapping; without this, doctrine:schema:validate
+    // and migrations:diff propose to drop them.
+    $services->set(PoppySchemaFilter::class)
+        ->args([param('koh_poppy.table_prefix')])
+        ->tag('doctrine.dbal.schema_filter', ['connection' => 'default']);
 
     // --- Ports -----------------------------------------------------------------
     $services->set('koh_poppy.psr17_factory', Psr17Factory::class);
