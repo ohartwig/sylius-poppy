@@ -1,0 +1,6 @@
+includes:
+    - vendor/koh/dev-sylius/config/sylius/phpstan.neon
+
+parameters:
+    paths:
+        - src

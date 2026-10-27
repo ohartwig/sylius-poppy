@@ -1,0 +1,49 @@
+# SPDX-FileCopyrightText: 2026 Kai Ole Hartwig <mail@ole-hartwig.eu>
+# SPDX-License-Identifier: MIT
+koh_poppy:
+    scope:
+        poppy_read: 'See your orders, addresses and account details'
+        poppy_write: 'Order on your behalf and change account details'
+    consent:
+        title: 'Connect a personal agent'
+        intro: 'A personal agent wants to act for you at %company%. You are signed in as %email%.'
+        published_on: 'published on %host%'
+        scopes: 'What the agent may do'
+        return_to: 'Afterwards you return to %host%.'
+        revoke_hint: 'You can disconnect the agent at any time under "Connected agents" in your account.'
+        approve: 'Allow'
+        deny: 'Decline'
+    device:
+        title: 'Enter code'
+        intro: 'Enter the code your personal agent shows for %company%.'
+        code: 'Code'
+        continue: 'Continue'
+        check_code: 'Compare the code %code% with the one your agent shows. Only allow if you started this sign-in yourself.'
+        unknown: 'This code is unknown or has expired.'
+        too_many: 'Too many attempts. Please wait a few minutes.'
+        approved: 'Agent connected'
+        approved_text: '%agent% can now act for you within what you allowed. You can close this window.'
+        denied: 'Declined'
+        denied_text: '%agent% gets no access to your account.'
+    account:
+        menu: 'Connected agents'
+        title: 'Connected agents'
+        intro: 'Personal agents you connected to your account. Disconnecting ends their access at once.'
+        none: 'No agent is connected to your account.'
+        since: 'connected since %date%'
+        disconnect: 'Disconnect'
+    error:
+        title: 'That did not work'
+        request_expired: 'The request has expired. Please start the sign-in again in your agent.'
+        csrf: 'The form was out of date. Please try again.'
+    admin:
+        feedback:
+            menu: 'Agent feedback'
+            title: 'Feedback from personal agents'
+            intro: 'Tasks agents could not do here. The text is the agents'' own and unverified.'
+            received: 'Received'
+            task: 'Task'
+            description: 'Description'
+            agent: 'Agent'
+            signed_in: 'signed in'
+            none: 'No feedback yet.'

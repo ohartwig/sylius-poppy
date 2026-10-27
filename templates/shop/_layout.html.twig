@@ -1,0 +1,15 @@
+{#
+SPDX-FileCopyrightText: 2026 Kai Ole Hartwig <mail@ole-hartwig.eu>
+SPDX-License-Identifier: MIT
+
+Frame of every Poppy page in the shop. Override it at
+templates/bundles/KohSyliusPoppyBundle/shop/_layout.html.twig to match a
+theme; the pages only fill the poppy_content block.
+#}
+{% extends '@SyliusShop/shared/layout/base.html.twig' %}
+
+{% block content %}
+<div class="container my-5" style="max-width: 40rem;">
+    {% block poppy_content %}{% endblock %}
+</div>
+{% endblock %}

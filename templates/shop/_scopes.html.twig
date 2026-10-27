@@ -1,0 +1,18 @@
+{#
+SPDX-FileCopyrightText: 2026 Kai Ole Hartwig <mail@ole-hartwig.eu>
+SPDX-License-Identifier: MIT
+
+One checkbox per requested scope, all ticked: the customer may approve fewer.
+#}
+<fieldset class="mb-4">
+    <legend class="h6">{{ 'koh_poppy.consent.scopes'|trans }}</legend>
+    {% for scope in scopes %}
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="scopes[]" value="{{ scope }}" id="poppy-scope-{{ loop.index }}" checked>
+            <label class="form-check-label" for="poppy-scope-{{ loop.index }}">
+                {{ ('koh_poppy.scope.' ~ scope|replace({':': '_'}))|trans }}
+                <code class="small text-muted ms-1">{{ scope }}</code>
+            </label>
+        </div>
+    {% endfor %}
+</fieldset>
