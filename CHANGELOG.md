@@ -2,6 +2,12 @@
 
 All notable changes are recorded here by the release tooling.
 
+## [1.0.2](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/compare/v1.0.1...v1.0.2) (2026-10-27)
+
+### :bug: Fixes
+
+* keep the Poppy tables out of Doctrine's schema checks ([3131864](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/31318649e2fe57d5d8c8655bc8e26607076e3f42))
+
 ## [1.0.1](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/compare/v1.0.0...v1.0.1) (2026-10-27)
 
 ### :bug: Fixes
