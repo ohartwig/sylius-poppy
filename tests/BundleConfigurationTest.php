@@ -77,6 +77,7 @@ final class BundleConfigurationTest extends TestCase
             self::assertTrue($container->hasDefinition($id), $id);
         }
         self::assertTrue($container->getDefinition(DiscoveryController::class)->isPublic());
+        self::assertSame([['connection' => 'default']], $container->getDefinition(\Koh\SyliusPoppy\Doctrine\PoppySchemaFilter::class)->getTag('doctrine.dbal.schema_filter'));
     }
 
     /** @param array<string, mixed> $configs */

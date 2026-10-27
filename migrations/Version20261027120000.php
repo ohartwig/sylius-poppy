@@ -26,15 +26,24 @@ final class Version20261027120000 extends AbstractMigration
         return 'koh/sylius-poppy: Personal Agent Protocol tables';
     }
 
+    /**
+     * Plain SQL from the platform rather than changes to $schema: the bundle's
+     * schema filter hides these tables from Doctrine's schema tools, and a
+     * migration that went through them would not see what it created.
+     */
     public function up(Schema $schema): void
     {
-        PoppySchema::addTo($schema, 'koh_poppy_');
+        $tables = new Schema();
+        PoppySchema::addTo($tables, 'koh_poppy_');
+        foreach ($tables->toSql($this->connection->getDatabasePlatform()) as $sql) {
+            $this->addSql($sql);
+        }
     }
 
     public function down(Schema $schema): void
     {
         foreach (PoppySchema::tableNames('koh_poppy_') as $table) {
-            $schema->dropTable($table);
+            $this->addSql('DROP TABLE '.$table);
         }
     }
 }
