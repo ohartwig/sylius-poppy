@@ -1,0 +1,27 @@
+{#
+SPDX-FileCopyrightText: 2026 Kai Ole Hartwig <mail@ole-hartwig.eu>
+SPDX-License-Identifier: MIT
+
+Device Sign-In consent. Keep the POST with _csrf_token, user_code, decision
+and scopes[] when overriding.
+#}
+{% extends '@KohSyliusPoppy/shop/_layout.html.twig' %}
+
+{% block title %}{{ 'koh_poppy.consent.title'|trans }} | {{ parent() }}{% endblock %}
+
+{% block poppy_content %}
+    <h1 class="h3 mb-4">{{ 'koh_poppy.consent.title'|trans }}</h1>
+    {% include '@KohSyliusPoppy/shop/_agent.html.twig' %}
+    <p>{{ 'koh_poppy.consent.intro'|trans({'%company%': company.name, '%email%': customer.email}) }}</p>
+    <p class="small text-muted">{{ 'koh_poppy.device.check_code'|trans({'%code%': code|upper}) }}</p>
+    <form method="post" action="{{ action }}">
+        <input type="hidden" name="_csrf_token" value="{{ csrf_token(csrf_id) }}">
+        <input type="hidden" name="user_code" value="{{ code }}">
+        {% include '@KohSyliusPoppy/shop/_scopes.html.twig' %}
+        <p class="small text-muted">{{ 'koh_poppy.consent.revoke_hint'|trans }}</p>
+        <div class="d-flex gap-2">
+            <button type="submit" name="decision" value="approve" class="btn btn-primary">{{ 'koh_poppy.consent.approve'|trans }}</button>
+            <button type="submit" name="decision" value="deny" class="btn btn-outline-secondary">{{ 'koh_poppy.consent.deny'|trans }}</button>
+        </div>
+    </form>
+{% endblock %}

@@ -1,0 +1,12 @@
+{#
+SPDX-FileCopyrightText: 2026 Kai Ole Hartwig <mail@ole-hartwig.eu>
+SPDX-License-Identifier: MIT
+#}
+{% extends '@KohSyliusPoppy/shop/_layout.html.twig' %}
+
+{% block title %}{{ 'koh_poppy.device.title'|trans }} | {{ parent() }}{% endblock %}
+
+{% block poppy_content %}
+    <h1 class="h3 mb-4">{{ ('koh_poppy.device.' ~ outcome)|trans }}</h1>
+    <p>{{ ('koh_poppy.device.' ~ outcome ~ '_text')|trans({'%agent%': agent.displayName}) }}</p>
+{% endblock %}

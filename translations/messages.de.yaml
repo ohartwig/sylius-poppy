@@ -1,0 +1,49 @@
+# SPDX-FileCopyrightText: 2026 Kai Ole Hartwig <mail@ole-hartwig.eu>
+# SPDX-License-Identifier: MIT
+koh_poppy:
+    scope:
+        poppy_read: 'Ihre Bestellungen, Adressen und Kontodaten ansehen'
+        poppy_write: 'In Ihrem Namen bestellen und Kontodaten ändern'
+    consent:
+        title: 'Persönlichen Agenten verbinden'
+        intro: 'Ein persönlicher Agent möchte für Sie bei %company% handeln. Sie sind angemeldet als %email%.'
+        published_on: 'veröffentlicht auf %host%'
+        scopes: 'Was der Agent darf'
+        return_to: 'Danach geht es zurück zu %host%.'
+        revoke_hint: 'Sie können den Agenten jederzeit unter „Verbundene Agenten“ in Ihrem Konto trennen.'
+        approve: 'Erlauben'
+        deny: 'Ablehnen'
+    device:
+        title: 'Code eingeben'
+        intro: 'Geben Sie den Code ein, den Ihr persönlicher Agent für %company% anzeigt.'
+        code: 'Code'
+        continue: 'Weiter'
+        check_code: 'Vergleichen Sie den Code %code% mit dem, den Ihr Agent anzeigt. Erlauben Sie nur, wenn Sie die Anmeldung selbst gestartet haben.'
+        unknown: 'Dieser Code ist unbekannt oder abgelaufen.'
+        too_many: 'Zu viele Versuche. Bitte warten Sie einige Minuten.'
+        approved: 'Agent verbunden'
+        approved_text: '%agent% kann jetzt in dem erlaubten Umfang für Sie handeln. Sie können dieses Fenster schließen.'
+        denied: 'Abgelehnt'
+        denied_text: '%agent% erhält keinen Zugriff auf Ihr Konto.'
+    account:
+        menu: 'Verbundene Agenten'
+        title: 'Verbundene Agenten'
+        intro: 'Persönliche Agenten, die Sie mit Ihrem Konto verbunden haben. Trennen beendet ihren Zugriff sofort.'
+        none: 'Kein Agent ist mit Ihrem Konto verbunden.'
+        since: 'verbunden seit %date%'
+        disconnect: 'Trennen'
+    error:
+        title: 'Das hat nicht geklappt'
+        request_expired: 'Die Anfrage ist abgelaufen. Bitte starten Sie die Anmeldung in Ihrem Agenten neu.'
+        csrf: 'Das Formular war veraltet. Bitte versuchen Sie es noch einmal.'
+    admin:
+        feedback:
+            menu: 'Agenten-Feedback'
+            title: 'Feedback von persönlichen Agenten'
+            intro: 'Aufgaben, die Agenten hier nicht erledigen konnten. Der Text stammt von den Agenten selbst und ist ungeprüft.'
+            received: 'Eingang'
+            task: 'Aufgabe'
+            description: 'Beschreibung'
+            agent: 'Agent'
+            signed_in: 'angemeldet'
+            none: 'Noch kein Feedback.'

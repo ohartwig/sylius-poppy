@@ -1,0 +1,25 @@
+{#
+SPDX-FileCopyrightText: 2026 Kai Ole Hartwig <mail@ole-hartwig.eu>
+SPDX-License-Identifier: MIT
+
+Device Sign-In: enter the code the Personal Agent shows.
+#}
+{% extends '@KohSyliusPoppy/shop/_layout.html.twig' %}
+
+{% block title %}{{ 'koh_poppy.device.title'|trans }} | {{ parent() }}{% endblock %}
+
+{% block poppy_content %}
+    <h1 class="h3 mb-4">{{ 'koh_poppy.device.title'|trans }}</h1>
+    <p>{{ 'koh_poppy.device.intro'|trans({'%company%': company.name}) }}</p>
+    {% if error is defined %}
+        <div class="alert alert-warning" role="alert">{{ error|trans }}</div>
+    {% endif %}
+    <form method="post" action="{{ action }}">
+        <div class="mb-3">
+            <label class="form-label" for="poppy-user-code">{{ 'koh_poppy.device.code'|trans }}</label>
+            <input class="form-control form-control-lg text-uppercase" id="poppy-user-code" name="user_code" value="{{ code }}"
+                   autocomplete="one-time-code" autocapitalize="characters" spellcheck="false" maxlength="12" required placeholder="ABCD-EFGH">
+        </div>
+        <button type="submit" class="btn btn-primary">{{ 'koh_poppy.device.continue'|trans }}</button>
+    </form>
+{% endblock %}

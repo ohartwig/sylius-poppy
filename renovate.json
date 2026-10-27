@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "local>devops/renovate-runner:default.json",
+    "local>pinup/runner:public-package"
+  ],
+  "packageRules": [
+    {
+      "description": "sylius/sylius keeps its lower bound at 2.2.9 so a shop still on Sylius 2.2 can install this package; widen appends new minors and majors instead of raising the floor. Same rule as koh/sylius-mcp-oauth. Remove when every consumer runs Sylius 2.3 or later.",
+      "matchPackageNames": [
+        "sylius/sylius"
+      ],
+      "rangeStrategy": "widen",
+      "minimumReleaseAge": "7 days"
+    }
+  ]
+}
