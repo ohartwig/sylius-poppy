@@ -2,6 +2,12 @@
 
 All notable changes are recorded here by the release tooling.
 
+## [1.0.5](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/compare/v1.0.4...v1.0.5) (2026-10-30)
+
+### :repeat: Chores
+
+* **deps:** update dependency phpstan/phpstan to ^2.3.4 ([a1f29ce](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/a1f29ce48d489165fbf5fe911e4317916806c1b2))
+
 ## [1.0.4](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/compare/v1.0.3...v1.0.4) (2026-10-28)
 
 ### :repeat: Continuous Integrations
