@@ -2,6 +2,12 @@
 
 All notable changes are recorded here by the release tooling.
 
+## [1.0.6](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/compare/v1.0.5...v1.0.6) (2026-11-03)
+
+### :bug: Fixes
+
+* **deps:** update dependency psr/clock to ^1.0.0 ([ee798d2](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/ee798d2e52445b3cfbad8ff5a86faab92bc5d955))
+
 ## [1.0.5](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/compare/v1.0.4...v1.0.5) (2026-10-30)
 
 ### :repeat: Chores
