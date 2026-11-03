@@ -30,7 +30,7 @@
         "koh/sylius-agent-contracts": "^1.1",
         "nyholm/psr7": "^1.8.2",
         "psr/cache": "^2.0 || ^3.0",
-        "psr/clock": "^1.0",
+        "psr/clock": "^1.0.0",
         "psr/http-client": "^1.0.3",
         "psr/http-message": "^1.1 || ^2.0",
         "sylius/sylius": "^2.2.9 || ^2.3.0",
