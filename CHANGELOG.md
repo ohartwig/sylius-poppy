@@ -2,6 +2,32 @@
 
 All notable changes are recorded here by the release tooling.
 
+## [1.0.8](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/compare/v1.0.7...v1.0.8) (2026-11-14)
+
+### :repeat: Chores
+
+* **deps:** update dependency phpunit/phpunit to ^11.5.58 ([f5379c1](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/f5379c1059d2fa2624ffadebf47efebf946bb6ac))
+* **repo-templates:** sync ([e0e25f9](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/e0e25f956374b778e7f6671daa94f4370057aec9))
+* **deps:** update dependency registry.ole-hartwig.eu/devops/images/franken-php/ci to v3.2.173-8.5 ([762c5e5](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/762c5e5c9a3e141c04b1d699b2db5afd95abbe78))
+* **deps:** update dependency registry.ole-hartwig.eu/devops/images/franken-php/ci to v3.2.172-8.5 ([4837faa](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/4837faa83a1e73d86204776ab4a64e8244935ee8))
+* **repo-templates:** sync ([8fe4ac6](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/8fe4ac6486f32fb5e267d815db992b2ec03cd288))
+* **repo-templates:** sync ([73a7032](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/73a7032b45038b4152c782e47f76bd8db8b68215))
+* **repo-templates:** sync ([8c712c0](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/8c712c0f5769e073b3d98459d424b426987e5eea))
+* **repo-templates:** sync ([f0d87d1](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/f0d87d19a2a1bc49e1649cb55051c141b8a096e0))
+* **deps:** update dependency registry.ole-hartwig.eu/devops/images/franken-php/ci to v3.2.150-8.5 ([39b988d](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/39b988dddd114852de4211d390169cdade6b6229))
+* **deps:** update dependency registry.ole-hartwig.eu/devops/images/franken-php/ci to v3.2.149-8.5 ([621e88a](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/621e88a4865885a60583a3285f24fd16d8cd4e24))
+* **deps:** update dependency registry.ole-hartwig.eu/devops/images/franken-php/ci to v3.2.148-8.5 ([d4b0bb5](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/d4b0bb5d77be2cf99e86baf57329576bf90ecfab))
+* **deps:** update dependency registry.ole-hartwig.eu/devops/images/franken-php/ci to v3.2.147-8.5 ([02fb408](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/02fb40853f81469fef712e1b41365868071f384a))
+* **deps:** update dependency registry.ole-hartwig.eu/devops/images/franken-php/ci to v3.2.146-8.5 ([807fa6b](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/807fa6b5ae56f4e5b143c695f64520746d0b625f))
+* **deps:** update dependency registry.ole-hartwig.eu/devops/images/franken-php/ci to v3.2.144-8.5 ([adb5a18](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/adb5a1821b106e848b85dca58a97675082d65f05))
+* **deps:** update dependency registry.ole-hartwig.eu/devops/images/franken-php/ci to v3.2.143-8.5 ([02a4bf8](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/02a4bf846c06922a62cbc4bdc5eb5f0d11aa5c4f))
+* **repo-templates:** sync ([100d640](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/100d6400a39a285e10b65537ed2c5b22e559b242))
+* **deps:** update dependency registry.ole-hartwig.eu/devops/images/franken-php/ci to v3.2.142-8.5 ([8bdfa2a](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/8bdfa2a7c08b276c2872e63c6e918daec03025c3))
+* **deps:** update dependency registry.ole-hartwig.eu/devops/images/franken-php/ci to v3.2.140-8.5 ([94243fc](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/94243fcf0e7c17ea107aabf2b795fb503233f567))
+* **deps:** update dependency registry.ole-hartwig.eu/devops/images/franken-php/ci to v3.2.139-8.5 ([d68e8c9](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/d68e8c970f8433c8c4248477d4d3bb2c891b2eb2))
+* **deps:** update dependency registry.ole-hartwig.eu/devops/images/franken-php/ci to v3.2.138-8.5 ([133cc0d](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/133cc0d6570f810e3d8a70640d145ce569e607ff))
+* **deps:** update dependency registry.ole-hartwig.eu/devops/images/franken-php/ci to v3.2.137-8.5 ([304419a](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/304419a8106af14acb4bdece70553f9cefdb2e00))
+
 ## [1.0.7](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/compare/v1.0.6...v1.0.7) (2026-11-06)
 
 ### :repeat: Chores
