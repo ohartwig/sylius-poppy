@@ -2,6 +2,12 @@
 
 All notable changes are recorded here by the release tooling.
 
+## [1.0.9](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/compare/v1.0.8...v1.0.9) (2026-11-15)
+
+### :bug: Fixes
+
+* **http:** fetch agent metadata through a proxy, with a proxy setting of its own ([931de38](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/931de38abcb149aa90e247db9a0383d0a58c36c4))
+
 ## [1.0.8](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/compare/v1.0.7...v1.0.8) (2026-11-14)
 
 ### :repeat: Chores
