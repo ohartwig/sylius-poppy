@@ -170,8 +170,18 @@ theme. Translations ship in German and English under `koh_poppy.*`.
   the page always shows the host its metadata is published on next to them.
 - The authorization request is kept server-side while the customer signs in.
   The redirect URI never travels through the customer's browser.
-- Agent metadata is fetched over HTTPS only, through Symfony's
-  `NoPrivateNetworkHttpClient`, without redirects and with short timeouts.
+- Agent metadata is fetched over HTTPS only, without redirects and with short
+  timeouts. Fetched directly, it goes through Symfony's
+  `NoPrivateNetworkHttpClient`, which checks the address actually connected
+  to. Fetched through a proxy, that check cannot apply — the address connected
+  to is the proxy's — so the proxy has to keep private destinations out; the
+  pre-flight check of the name still runs.
+- The fetch uses the proxy in `KOH_POPPY_PROXY` if set, else the one in
+  `HTTPS_PROXY`, and ignores `NO_PROXY`. The own setting is for an egress
+  proxy that admits only listed hosts: an agent's domain is whatever the
+  agent says it is and cannot be on a list, so such a setup gives this fetch
+  a proxy port of its own. A value that is not an `http://` or `https://` URL
+  is refused.
 - The browser cookie carries the Session id with an HMAC under the kernel
   secret, is `Secure`, `HttpOnly`, `SameSite=Lax`, and expires with the
   Session.
