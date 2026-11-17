@@ -2,6 +2,13 @@
 
 All notable changes are recorded here by the release tooling.
 
+## [1.0.10](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/compare/v1.0.9...v1.0.10) (2026-11-17)
+
+### :repeat: Chores
+
+* **deps:** update dependency phpstan/phpstan to ^2.3.6 ([7ec604a](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/7ec604a391dfdf8cb7dbd2c0d1ada4979cc5c4d1))
+* **deps:** update dependency registry.ole-hartwig.eu/devops/images/franken-php/ci to v3.2.246-8.5 ([919e511](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/919e511ed36c51c4ffea037207e8f7fda39e9d16))
+
 ## [1.0.9](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/compare/v1.0.8...v1.0.9) (2026-11-15)
 
 ### :bug: Fixes
