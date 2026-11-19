@@ -2,6 +2,12 @@
 
 All notable changes are recorded here by the release tooling.
 
+## [1.0.13](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/compare/v1.0.12...v1.0.13) (2026-11-19)
+
+### :bug: Fixes
+
+* **deps:** update dependency symfony/http-client-contracts to ^3.8.1 ([9a416a2](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/9a416a23aaf0299b33c70d3e61e6dd4446f8d61a))
+
 ## [1.0.12](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/compare/v1.0.11...v1.0.12) (2026-11-18)
 
 ### :bug: Fixes
