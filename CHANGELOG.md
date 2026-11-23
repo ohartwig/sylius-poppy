@@ -2,6 +2,17 @@
 
 All notable changes are recorded here by the release tooling.
 
+## [1.0.15](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/compare/v1.0.14...v1.0.15) (2026-11-23)
+
+### :bug: Fixes
+
+* **deps:** update dependency doctrine/migrations to ^3.9.9 ([a02e8bc](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/a02e8bc87f6a4ca977140ea415f8286ae2db2729))
+
+### :repeat: Chores
+
+* **deps:** update dependency registry.ole-hartwig.eu/devops/images/franken-php/ci to v3.2.365-8.5 ([3f3cc98](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/3f3cc986ddb6136283b69467cf33b09b1471f099))
+* **repo-templates:** sync ([2c0dd43](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/2c0dd43434c16763d3695bebe5ff0ba84d94a673))
+
 ## [1.0.14](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/compare/v1.0.13...v1.0.14) (2026-11-20)
 
 ### :repeat: Chores
