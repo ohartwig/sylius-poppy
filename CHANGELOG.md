@@ -2,6 +2,12 @@
 
 All notable changes are recorded here by the release tooling.
 
+## [1.0.16](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/compare/v1.0.15...v1.0.16) (2026-11-24)
+
+### :bug: Fixes
+
+* **deps:** update dependency twig/twig to ^3.31.1 [security] ([dd1efc5](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/dd1efc5e1af6bc21213fda0415dfa7e158164d14))
+
 ## [1.0.15](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/compare/v1.0.14...v1.0.15) (2026-11-23)
 
 ### :bug: Fixes
