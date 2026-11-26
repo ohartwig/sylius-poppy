@@ -2,6 +2,12 @@
 
 All notable changes are recorded here by the release tooling.
 
+## [1.0.17](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/compare/v1.0.16...v1.0.17) (2026-11-26)
+
+### :bug: Fixes
+
+* **deps:** update dependency doctrine/migrations to ^3.10.0 ([8bf5bd3](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/8bf5bd3da2d5d65ddaabf901807b8365512d4a57))
+
 ## [1.0.16](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/compare/v1.0.15...v1.0.16) (2026-11-24)
 
 ### :bug: Fixes
