@@ -2,6 +2,12 @@
 
 All notable changes are recorded here by the release tooling.
 
+## [1.0.18](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/compare/v1.0.17...v1.0.18) (2026-11-27)
+
+### :bug: Fixes
+
+* **deps:** update dependency nyholm/psr7 to ^1.8.3 ([7d65e58](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/commit/7d65e58524187ac6b2e887c195edd835480be4b4))
+
 ## [1.0.17](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-poppy/compare/v1.0.16...v1.0.17) (2026-11-26)
 
 ### :bug: Fixes
